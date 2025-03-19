@@ -21,3 +21,19 @@ Array.prototype.flatArr = function () {
 }
 
 console.log(arr.flatArr())
+
+// Array.prototype.flatArr = function () {
+//     const arr = this;
+//     let flatArray = [];
+//     arr.forEach((ele) => {
+//         if (!Array.isArray(ele)) {
+//             flatArray.push(ele)
+//         }
+//         else {
+//             flatArray = flatArray.concat(ele.flatArr())
+//         }
+//     })
+//     return flatArray;
+// }
+
+// console.log(arr.flatArr())
